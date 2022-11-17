@@ -2,7 +2,6 @@ body {
     margin: 0;
     padding: 0;
     background: #FFF;
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -10,7 +9,7 @@ body {
 a,
 button {
     transition: all .2s ease-in-out;
-    outline: none!important;
+    outline: none;
 }
 
 a:hover {
@@ -23,7 +22,7 @@ a:hover {
     top: 0;
     bottom: 0;
     width: 100%;
-    z-index: 100000;
+    z-index: 3;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
@@ -78,6 +77,10 @@ a:hover {
 
 .bg-t-edge {
     background: top no-repeat;
+}
+
+.bg-t-edge-bottom {
+    background: bottom no-repeat;
 }
 
 .bloc-bg-texture::before {
@@ -294,7 +297,6 @@ a:hover {
 
 .navbar {
     margin-bottom: 0;
-    z-index: 1;
 }
 
 .navbar-brand {
@@ -346,10 +348,6 @@ a:hover {
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
-}
-
-.navbar-toggle:hover {
-    background: transparent!important;
 }
 
 .navbar-toggle .icon-bar {
@@ -523,17 +521,12 @@ button {
     bottom: 20px;
     right: 20px;
     opacity: 1;
-    z-index: 500;
+    z-index: 2;
     transition: all .3s ease-in-out;
 }
 
 .scrollToTop span {
     margin-top: 6px;
-}
-
-.showScrollTop {
-    font-size: 14px;
-    opacity: 1;
 }
 
 a[data-lightbox] {
@@ -741,7 +734,6 @@ footer nav:nth-child(2) ul li {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -799,7 +791,7 @@ h3 {
 
 .bold-link {
     font-weight: 900;
-    text-decoration: underline!important;
+    text-decoration: underline;
 }
 
 .bgc-white {
@@ -824,33 +816,33 @@ h3 {
 
 .btn-atomic-tangerine {
     background: #C64A10;
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #c27956;
+    color: #FFFFFF;
 }
 
 .ltc-white {
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    color: #cccccc;
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #F3976C;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #c27956;
 }
 
 .icon-dark-slate-blue {
-    color: #364577!important;
-    border-color: #364577!important;
+    color: #364577;
+    border-color: #364577;
 }
 
 .bg-dots-bg {
@@ -947,8 +939,8 @@ h3 {
     p,
     #disqus_thread,
     .col-sm-4 ul {
-        padding-left: 10px!important;
-        padding-right: 10px!important;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .b-parallax {
         background-attachment: scroll;
@@ -956,7 +948,7 @@ h3 {
     .navbar .nav {
         padding-top: 0;
         border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none!important;
+        float: none;
     }
     .navbar.row {
         margin-left: 0;
@@ -981,7 +973,7 @@ h3 {
     }
     .dropdown .dropdown a .caret {
         float: none;
-        margin: 5px 0 0 10px!important;
+        margin: 5px 0 0 10px;
         border: 4px solid black;
         border-bottom-color: transparent;
         border-right-color: transparent;
@@ -1071,6 +1063,10 @@ h3 {
         height: 320px;
     }
 
+    .bloc-mob-center-text {
+        text-align: center;
+    }
+
     .flex-img{
         display: flex;
         align-items: flex-start;
@@ -1081,11 +1077,5 @@ h3 {
     .bloc {
         padding-left: 0;
         padding-right: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
     }
 }
