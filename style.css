@@ -408,7 +408,7 @@ a:hover {
 }
 
 .nav > li > .dropdown a {
-    background: none!important;
+    background: none;
     display: block;
     padding: 14px 15px;
 }
@@ -435,7 +435,7 @@ nav .caret {
     border-top-color: transparent;
     border-right-color: transparent;
     border-bottom-color: transparent;
-    margin: 6px -5px 0 0!important;
+    margin: 6px -5px 0 0;
     float: right;
 }
 
@@ -465,7 +465,7 @@ nav .caret {
 }
 
 button {
-    outline: none!important;
+    outline: none;
 }
 
 .btn-rd {
@@ -479,12 +479,12 @@ button {
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 }
 
-.icon-md {
-    font-size: 35px!important;
+.social .icon-md {
+    font-size: 35px;
 }
 
 .icon-lg {
-    font-size: 60px!important;
+    font-size: 60px;
 }
 
 .sm-shadow {
@@ -695,6 +695,14 @@ li {
     justify-content: space-evenly;
 }
 
+.jc-center{
+    justify-content: center;
+}
+
+.ta-center{
+    text-align: center;
+}
+
 .pad0 {
     padding: 0px;
 }
@@ -754,7 +762,7 @@ h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
-    color: #333333!important;
+    color: #333333;
 }
 
 .med-width-whitespace {
@@ -768,7 +776,7 @@ h3 {
 }
 
 .white, #bloc-8 h3 {
-    color: #FFFFFF!important;
+    color: #FFFFFF;
 }
 
 .portfolio-thumb {
@@ -908,20 +916,10 @@ h3 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding: env(safe-area-inset-left);
-        padding: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
         width: 100%;
-    }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        @supports (padding-left: constant(safe-area-inset-left));
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -930,13 +928,6 @@ h3 {
         overflow-x: hidden;
         position: relative;
     }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
     #disqus_thread,
     .col-sm-4 ul {
         padding-left: 10px;
@@ -1000,6 +991,10 @@ h3 {
     }
     footer img {
         width: unset;
+    }
+
+    footer .row{
+        padding: 0px 10px;
     }
     .nav-invert .navbar-header {
         float: none;
