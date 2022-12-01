@@ -726,6 +726,11 @@ footer nav:nth-child(2) ul li {
     padding-right: 10px;
 }
 
+footer nav .row div{
+    display: flex;
+    flex-direction: row;
+}
+
 .col-sm-6 img {
     width: 100%;
 }
